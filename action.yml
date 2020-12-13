@@ -1,0 +1,21 @@
+name: 'Altostra Push and Deploy'
+description: 'GitHub Action to push and deploy the current project'
+author: 'Altostra'
+branding:
+  icon: 'triangle'
+  color: 'purple'
+
+inputs:
+  env-name:
+    description: The environment to which to deploy
+    required: true
+  image-name:
+    description: 'Optional. The image name (i.e: 1.0.0, v2.4.1, alpha, dev, test, ...)'
+    required: false
+  instance-name:
+    description: The instance name to deploy
+    required: true
+
+runs:
+  using: "node12"
+  main: 'src/setup-cli.js'
