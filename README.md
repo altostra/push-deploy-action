@@ -1,4 +1,3 @@
-![altostra-integration](./resources/img/github-actions-ci-cd-altostra.png)
 ## About
 
 Use this action to deploy Altostra projects.
